@@ -14,7 +14,9 @@ export default function(state = {
         word: action.payload.word,
         word_correct: action.payload.word.split(''),
         word_shuffle: shuffle(action.payload.word.split('')),
-        result: []
+        result: [],
+        history: [],
+        select_location: 0
       }
       break;
     }
